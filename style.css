@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #f7f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+    letter-spacing: 1px;
+    margin: 30px 0;
+}
+
+.todo-list {
+    background: #ffffff;
+    width: 450px;
+    padding: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border: 1px solid #dcdbdb;
+}
+
+.list-head {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 10px;
+}
+
+.entered-list {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #dcdbdb;
+    font-size: 16px;
+    outline: none;
+}
+
+.add-list {
+    border: none;
+    border-radius: 5px;
+    background-color: #0d8bff;
+    outline: none;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.add-list.active {
+    background-color: #0073df;
+    pointer-events: all;
+}
+
+.tasks {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.item {
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #dcdbdb;
+}
+
+.item p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #111;
+    letter-spacing: 0.5px;
+    opacity: 0.8;
+}
+
+.item.completed p {
+    text-decoration: line-through;
+    color: #41DA7E;
+    font-weight: 500;
+}
+
+.item-btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.fa-square-check {
+    color: #41DA7E;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.fa-xmark {
+    color: #FE2F52;
+    cursor: pointer;
+    font-size: 18px;
+}
